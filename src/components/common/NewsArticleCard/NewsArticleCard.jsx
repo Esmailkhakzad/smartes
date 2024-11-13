@@ -18,7 +18,7 @@ const NewsArticleCard = ({ id, title, imageSrc, description, date, views }) => {
 
   return (
     <div className={styles.boxnews}>
-      <img src={imageSrc} alt="توضیح تصویر" className={styles.image} />
+      <img src={imageSrc}  className={styles.image} />
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>{description}</p>
       <div className={styles.iconContainer}>
