@@ -18,7 +18,6 @@ const Services = () => {
         <div className='Services-circle'></div>
       </div>
       <div className='Services-subtitle'>
-        
         مجموعه ای از تمام آنچه شما نیاز دارید
       </div>
       <div className='services-container'>

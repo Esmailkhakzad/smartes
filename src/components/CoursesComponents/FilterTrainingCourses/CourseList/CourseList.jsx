@@ -1,13 +1,17 @@
 /* eslint-disable react/prop-types */
 // eslint-disable-next-line no-unused-vars
-import React from 'react';
-import TrainingCourseCard from '../../../common/TrainingCourseCard/TrainingCourseCard';
-import HorizontalCard from '../../../common/HorizontalCard/HorizontalCard';
-import styles from './CourseList.module.css';
+import React from 'react'
+import TrainingCourseCard from '../../../common/TrainingCourseCard/TrainingCourseCard'
+import HorizontalCard from '../../../common/HorizontalCard/HorizontalCard'
+import styles from './CourseList.module.css'
 
 const CourseList = ({ courses, isHorizontal }) => {
   return (
-    <div className={`${styles.slider} ${isHorizontal ? styles.horizontal : styles.vertical}`}>
+    <div
+      className={`${styles.slider} ${
+        isHorizontal ? styles.horizontal : styles.vertical
+      }`}
+    >
       {courses.map((course, index) =>
         isHorizontal ? (
           <HorizontalCard
@@ -32,7 +36,7 @@ const CourseList = ({ courses, isHorizontal }) => {
         )
       )}
     </div>
-  );
-};
+  )
+}
 
-export default CourseList;
+export default CourseList
