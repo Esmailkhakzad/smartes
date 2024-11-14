@@ -1,12 +1,12 @@
-/* eslint-disable react/prop-types */
+
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import styles from './NewsArticlesBox.module.css';
 import NewsArticleCard from '../../common/NewsArticleCard/NewsArticleCard';
-import FeatureCard from '../NewsArticlesBox/FeatureCard/FeatureCard';
 import SearcNews from '../SearcNews/SearcNews';
+import ContentSection from '../NewsArticlesBox/ContentSection/ContentSection';
 
-// Importing images
+
 import Rectangle95 from '../../../assets/images/Rectangle 95.png';
 import Ellipse39 from '../../../assets/images/Ellipse 39.png';
 import Ellipse391 from '../../../assets/images/Ellipse 39(1).png';
@@ -61,18 +61,6 @@ const NewsArticlesBox = () => {
       ],
     },
   ];
-
-  const ContentSection = ({ heading, paragraph, contents }) => (
-    <div className={styles.box}>
-      <h1 className={styles.heading}>{heading}</h1>
-      <p className={styles.paragraph}>{paragraph}</p>
-      <div className={styles.circleContainer}>
-        {contents.map((content, index) => (
-          <FeatureCard key={index} title={content.title} imageSrc={content.imageSrc} buttonText={content.buttonText} />
-        ))}
-      </div>
-    </div>
-  );
 
   return (
     <div className={styles.container}>
